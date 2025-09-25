@@ -11,7 +11,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 })
 export class AppComponent {
   title = 'APPDEV1_MG_SEARCH';
-  @Input() searchData = ""
+  searchData = ""
   constructor () {}
   ngOnDestroy() {}
   ngOnInit() {}

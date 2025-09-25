@@ -1,6 +1,5 @@
 <div class="container-md text-center m-auto mt-5">
-  <h1>Search</h1>
+  <h1 class="mb-4">Search</h1>
   <app-search-bar (searchText)="getSearchData($event)" />
-  <app-search-results/>
-  <p>{{searchData}}</p>
+  <app-search-results [search]="searchData"/>
 </div>
