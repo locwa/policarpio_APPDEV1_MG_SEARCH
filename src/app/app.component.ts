@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchResultsComponent } from './search-results/search-results.component'
@@ -11,4 +11,11 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 })
 export class AppComponent {
   title = 'APPDEV1_MG_SEARCH';
+  @Input() searchData = ""
+  constructor () {}
+  ngOnDestroy() {}
+  ngOnInit() {}
+  getSearchData(e : string) {
+    this.searchData = e
+  }
 }
